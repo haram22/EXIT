@@ -22,6 +22,8 @@
 		2131A3FD2C91DFAA007A421C /* Exit_ActivityMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 2131A3F42C91DFAA007A421C /* Exit_ActivityMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2131A4012C91E697007A421C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131A3B72C91CF06007A421C /* ViewController.swift */; };
 		2131A4032C91E6EC007A421C /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131A3E52C91DF99007A421C /* TotalActivityView.swift */; };
+		21373CC42C92C4220051166E /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
+		21F45E222C92C582004F2B04 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		2131A3F72C91DFAA007A421C /* DeviceActivityMonitorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceActivityMonitorExtension.swift; sourceTree = "<group>"; };
 		2131A3F92C91DFAA007A421C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2131A3FA2C91DFAA007A421C /* Exit_ActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exit_ActivityMonitor.entitlements; sourceTree = "<group>"; };
+		21373CC12C92BE830051166E /* Exit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exit.entitlements; sourceTree = "<group>"; };
+		21373CC32C92C4220051166E /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		2131A3B22C91CF06007A421C /* Exit */ = {
 			isa = PBXGroup;
 			children = (
+				21373CC12C92BE830051166E /* Exit.entitlements */,
 				2131A3B32C91CF06007A421C /* AppDelegate.swift */,
 				2131A3B52C91CF06007A421C /* SceneDelegate.swift */,
 				2131A3B72C91CF06007A421C /* ViewController.swift */,
@@ -163,6 +168,7 @@
 				2131A3E12C91DF99007A421C /* Exit_ActivityReport.swift */,
 				2131A3E32C91DF99007A421C /* TotalActivityReport.swift */,
 				2131A3E52C91DF99007A421C /* TotalActivityView.swift */,
+				21373CC32C92C4220051166E /* AppListView.swift */,
 				2131A3E72C91DF99007A421C /* Info.plist */,
 				2131A3E82C91DF99007A421C /* Exit_ActivityReport.entitlements */,
 			);
@@ -314,6 +320,7 @@
 				2131A3B42C91CF06007A421C /* AppDelegate.swift in Sources */,
 				2131A4032C91E6EC007A421C /* TotalActivityView.swift in Sources */,
 				2131A3B62C91CF06007A421C /* SceneDelegate.swift in Sources */,
+				21373CC42C92C4220051166E /* AppListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +332,7 @@
 				2131A3E22C91DF99007A421C /* Exit_ActivityReport.swift in Sources */,
 				2131A4012C91E697007A421C /* ViewController.swift in Sources */,
 				2131A3E42C91DF99007A421C /* TotalActivityReport.swift in Sources */,
+				21F45E222C92C582004F2B04 /* AppListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +504,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Exit/Exit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XQ8HFGAQN;
@@ -525,6 +534,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Exit/Exit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XQ8HFGAQN;
