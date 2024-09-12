@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import FamilyControls
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    // 공유 인스턴스를 생성
+    let center = AuthorizationCenter.shared
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // 화면이 나타날 때 권한 요청을 비동기적으로 수행
+        Task {
+            do {
+                try await center.requestAuthorization(for: .individual)
+            } catch {
+                print("Failed to enroll with error: \(error)")
+            }
+        }
         return true
     }
 
@@ -33,4 +41,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

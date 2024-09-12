@@ -23,7 +23,9 @@
 		2131A4012C91E697007A421C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131A3B72C91CF06007A421C /* ViewController.swift */; };
 		2131A4032C91E6EC007A421C /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2131A3E52C91DF99007A421C /* TotalActivityView.swift */; };
 		21373CC42C92C4220051166E /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
-		21F45E222C92C582004F2B04 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
+		21F45E252C92C788004F2B04 /* LimitAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F45E242C92C788004F2B04 /* LimitAppModel.swift */; };
+		21F45E262C92C795004F2B04 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
+		21F45E272C92C7A2004F2B04 /* LimitAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F45E242C92C788004F2B04 /* LimitAppModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,7 @@
 		2131A3FA2C91DFAA007A421C /* Exit_ActivityMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exit_ActivityMonitor.entitlements; sourceTree = "<group>"; };
 		21373CC12C92BE830051166E /* Exit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exit.entitlements; sourceTree = "<group>"; };
 		21373CC32C92C4220051166E /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
+		21F45E242C92C788004F2B04 /* LimitAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAppModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +145,7 @@
 		2131A3B22C91CF06007A421C /* Exit */ = {
 			isa = PBXGroup;
 			children = (
+				21F45E232C92C77A004F2B04 /* ScreenTime */,
 				21373CC12C92BE830051166E /* Exit.entitlements */,
 				2131A3B32C91CF06007A421C /* AppDelegate.swift */,
 				2131A3B52C91CF06007A421C /* SceneDelegate.swift */,
@@ -168,7 +172,6 @@
 				2131A3E12C91DF99007A421C /* Exit_ActivityReport.swift */,
 				2131A3E32C91DF99007A421C /* TotalActivityReport.swift */,
 				2131A3E52C91DF99007A421C /* TotalActivityView.swift */,
-				21373CC32C92C4220051166E /* AppListView.swift */,
 				2131A3E72C91DF99007A421C /* Info.plist */,
 				2131A3E82C91DF99007A421C /* Exit_ActivityReport.entitlements */,
 			);
@@ -183,6 +186,15 @@
 				2131A3FA2C91DFAA007A421C /* Exit_ActivityMonitor.entitlements */,
 			);
 			path = Exit_ActivityMonitor;
+			sourceTree = "<group>";
+		};
+		21F45E232C92C77A004F2B04 /* ScreenTime */ = {
+			isa = PBXGroup;
+			children = (
+				21F45E242C92C788004F2B04 /* LimitAppModel.swift */,
+				21373CC32C92C4220051166E /* AppListView.swift */,
+			);
+			path = ScreenTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F45E252C92C788004F2B04 /* LimitAppModel.swift in Sources */,
 				2131A3B82C91CF06007A421C /* ViewController.swift in Sources */,
 				2131A3B42C91CF06007A421C /* AppDelegate.swift in Sources */,
 				2131A4032C91E6EC007A421C /* TotalActivityView.swift in Sources */,
@@ -328,11 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F45E272C92C7A2004F2B04 /* LimitAppModel.swift in Sources */,
 				2131A3E62C91DF99007A421C /* TotalActivityView.swift in Sources */,
 				2131A3E22C91DF99007A421C /* Exit_ActivityReport.swift in Sources */,
 				2131A4012C91E697007A421C /* ViewController.swift in Sources */,
 				2131A3E42C91DF99007A421C /* TotalActivityReport.swift in Sources */,
-				21F45E222C92C582004F2B04 /* AppListView.swift in Sources */,
+				21F45E262C92C795004F2B04 /* AppListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
