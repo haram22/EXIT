@@ -13,21 +13,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-           
-           guard let windowScene = (scene as? UIWindowScene) else { return }
-           
-           // `Model.shared`의 인스턴스를 생성
-           let model = Model.shared
-           
-           // SwiftUI의 AppListView를 설정
-           let contentView = AppListView().environmentObject(model)
-           
-           // 새로운 UIWindow를 생성하고 초기 뷰 컨트롤러로 설저
-           let window = UIWindow(windowScene: windowScene)
-           window.rootViewController = UIHostingController(rootView: contentView)
-           self.window = window
-           window.makeKeyAndVisible()
-       }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        // `Model.shared`의 인스턴스를 생성
+        let model = Model.shared
+        
+        // SwiftUI의 AppListView를 설정
+        let contentView = AppListView().environmentObject(model)
+        
+        // 새로운 UIWindow를 생성하고 초기 뷰 컨트롤러로 설저
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = UIHostingController(rootView: contentView)
+        self.window = window
+        window.makeKeyAndVisible()
+    }
     
     
     func sceneDidDisconnect(_ scene: UIScene) {
