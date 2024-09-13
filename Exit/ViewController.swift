@@ -13,14 +13,14 @@ import DeviceActivity
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let totalActivityView = TotalActivityView(totalActivity: "1h 23m")
-        let hostingController = UIHostingController(rootView: totalActivityView)
-
+        
+        let appListView = AppListView()
+        let hostingController = UIHostingController(rootView: appListView)
+        
         addChild(hostingController)
         view.addSubview(hostingController.view)
         hostingController.didMove(toParent: self)
-
+        
         hostingController.view.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),

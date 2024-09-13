@@ -15,4 +15,3 @@ struct TotalActivityView: View {
         Text(totalActivity)
     }
 }
-
