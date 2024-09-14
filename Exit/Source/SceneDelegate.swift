@@ -21,10 +21,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // SwiftUI의 AppListView를 설정
         let contentView = AppListView().environmentObject(model)
+
         
         // 새로운 UIWindow를 생성하고 초기 뷰 컨트롤러로 설저
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UIHostingController(rootView: contentView)
+//        window.rootViewController = UIHostingController(rootView: contentView)
+        window.rootViewController = AppleLoginViewController()
         self.window = window
         window.makeKeyAndVisible()
     }

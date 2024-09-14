@@ -26,6 +26,7 @@
 		21F45E252C92C788004F2B04 /* LimitAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F45E242C92C788004F2B04 /* LimitAppModel.swift */; };
 		21F45E262C92C795004F2B04 /* AppListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21373CC32C92C4220051166E /* AppListView.swift */; };
 		21F45E272C92C7A2004F2B04 /* LimitAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F45E242C92C788004F2B04 /* LimitAppModel.swift */; };
+		21F45E2A2C93D149004F2B04 /* AppleLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F45E292C93D149004F2B04 /* AppleLoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		21373CC12C92BE830051166E /* Exit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Exit.entitlements; sourceTree = "<group>"; };
 		21373CC32C92C4220051166E /* AppListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListView.swift; sourceTree = "<group>"; };
 		21F45E242C92C788004F2B04 /* LimitAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitAppModel.swift; sourceTree = "<group>"; };
+		21F45E292C93D149004F2B04 /* AppleLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,15 +147,13 @@
 		2131A3B22C91CF06007A421C /* Exit */ = {
 			isa = PBXGroup;
 			children = (
-				21F45E232C92C77A004F2B04 /* ScreenTime */,
+				21F45E282C93D0A7004F2B04 /* Source */,
+				21F45E232C92C77A004F2B04 /* ScreenTimeAPI */,
 				21373CC12C92BE830051166E /* Exit.entitlements */,
-				2131A3B32C91CF06007A421C /* AppDelegate.swift */,
-				2131A3B52C91CF06007A421C /* SceneDelegate.swift */,
 				2131A3B72C91CF06007A421C /* ViewController.swift */,
-				2131A3B92C91CF06007A421C /* Main.storyboard */,
 				2131A3BC2C91CF08007A421C /* Assets.xcassets */,
-				2131A3BE2C91CF08007A421C /* LaunchScreen.storyboard */,
 				2131A3C12C91CF08007A421C /* Info.plist */,
+				21F45E292C93D149004F2B04 /* AppleLoginVC.swift */,
 			);
 			path = Exit;
 			sourceTree = "<group>";
@@ -188,13 +188,24 @@
 			path = Exit_ActivityMonitor;
 			sourceTree = "<group>";
 		};
-		21F45E232C92C77A004F2B04 /* ScreenTime */ = {
+		21F45E232C92C77A004F2B04 /* ScreenTimeAPI */ = {
 			isa = PBXGroup;
 			children = (
 				21F45E242C92C788004F2B04 /* LimitAppModel.swift */,
 				21373CC32C92C4220051166E /* AppListView.swift */,
 			);
-			path = ScreenTime;
+			path = ScreenTimeAPI;
+			sourceTree = "<group>";
+		};
+		21F45E282C93D0A7004F2B04 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2131A3BE2C91CF08007A421C /* LaunchScreen.storyboard */,
+				2131A3B92C91CF06007A421C /* Main.storyboard */,
+				2131A3B32C91CF06007A421C /* AppDelegate.swift */,
+				2131A3B52C91CF06007A421C /* SceneDelegate.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 				2131A4032C91E6EC007A421C /* TotalActivityView.swift in Sources */,
 				2131A3B62C91CF06007A421C /* SceneDelegate.swift in Sources */,
 				21373CC42C92C4220051166E /* AppListView.swift in Sources */,
+				21F45E2A2C93D149004F2B04 /* AppleLoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
